@@ -1,7 +1,19 @@
 const express = require("express")
-const app = express()
 const mongoose = require('mongoose')
+
+const app = express()
+
 const PORT = process.env.PORT || 8081
+//Database configutation's
+const DATABASE_PORT = 27017
+const DATABASE_HOST= 'localhost'
+const DATABASE_URL = `mongodb://${DATABASE_HOST}:${DATABASE_PORT}`
+
+const connectDatabase =async ()=>{
+    mongoose.connect(DATABASE_URL)
+}
+connectDatabase()
+
 const userSchema = mongoose.Schema({
     name:String,
     email:String,
