@@ -1,0 +1,24 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Nodejs docker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahmudulazamshohan/node-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mahmudulazamshohan/node-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Mahmudulazamshohan/node-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ioredis": "^4.19.4",
+    "mongoose": "^5.11.10"
+  }
+}
